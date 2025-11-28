@@ -308,6 +308,7 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
     .features__item {
       display: grid;
       grid-auto-rows: min-content;
@@ -318,14 +319,41 @@
         text-align: center;
       }
     }
+
     .features__icon {
       width: auto;
       height: calc(48 / 16 * 1rem);
     }
+
     .features__title {
     }
+
     .features_description {
       max-width: 75ch;
+    }
+  }
+
+  .fw-feature {
+    background-color: var(--color-fullwidth-bg);
+    color: var(--color-text-white);
+    text-align: center;
+
+    .fw-feature__wrapper {
+      display: grid;
+      justify-items: center;
+    }
+
+    .fw-feature__title {
+      margin-block-end: 20px;
+    }
+
+    .fw-feature__description {
+      margin-block-end: 40px;
+      max-width: 75ch;
+    }
+
+    .fw-feature_image {
+      max-width: calc(792 / 16 * 1rem);
     }
   }
 }
